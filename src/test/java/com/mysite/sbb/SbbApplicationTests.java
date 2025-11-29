@@ -1,6 +1,8 @@
 package com.mysite.sbb;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertTrue;
+
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -58,11 +60,20 @@ class SbbApplicationTests {
 //        Question q = this.questionRepository.findBySubjectAndContent("sbb가 무엇인가요", "sbb에 대해서 알고 싶습니다");
 //        assertEquals(1, q.getId());
 //    }
+//
+//    @Test
+//    void testJpa6(){
+//        List<Question> qList = this.questionRepository.findBySubjectLike("sbb%");
+//        Question q = qList.get(0);
+//        assertEquals("sbb가 무엇인가요", q.getSubject());
+//    }
 
     @Test
-    void testJpa6(){
-        List<Question> qList = this.questionRepository.findBySubjectLike("sbb%");
-        Question q = qList.get(0);
-        assertEquals("sbb가 무엇인가요", q.getSubject());
+    void testJpa7(){
+        Optional<Question> oq = this.questionRepository.findById(1);
+        assertTrue(oq.isPresent());
+        Question q = oq.get();
+        q.setSubject("수정된 제목1");
+        this.questionRepository.save(q);
     }
 }
