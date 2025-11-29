@@ -1,4 +1,5 @@
 import org.gradle.kotlin.dsl.implementation
+import org.gradle.kotlin.dsl.testImplementation
 
 plugins {
 	java
@@ -38,6 +39,7 @@ dependencies {
     testImplementation("org.springframework.boot:spring-boot-starter-data-jpa-test")
 	testImplementation("org.springframework.boot:spring-boot-starter-thymeleaf-test")
 	testImplementation("org.springframework.boot:spring-boot-starter-webmvc-test")
+    testImplementation ("org.junit.jupiter:junit-jupiter")
 	testRuntimeOnly("org.junit.platform:junit-platform-launcher")
 }
 
