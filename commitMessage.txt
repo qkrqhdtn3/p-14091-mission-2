@@ -1,9 +1,18 @@
 git add .;
-git commit -m "feat: add question_detail template";
+git commit -m "fix: change /answer/create/{id} endpoint from GET to POST";
 git push origin main
 
-git commit --allow-empty -m "2-09 start"
+git commit --allow-empty -m "2-12 start"
 
+fix: change /answer/create/{id} endpoint from GET to POST
+feat: add AnswerController with /answer/create/{id} endpoint
+feat: add form to post answers in question_detail template
+Docs: add detailed explanation for previous commit f7ea36f - fix: correct typo in question_detail template
+refactor: add @RequestMapping("/question") to QuestionController
+feat: render question details in question_detail template
+feat: add question to model in /question/detail/{id} endpoint
+fix: import DataNotFoundException in QuestionService
+feat: create custom DataNotFoundException
 feat: add getQuestion(id) method to QuestionService
 feat: add question_detail template
 feat: add /question/detail/{id} endpoint in QuestionController
