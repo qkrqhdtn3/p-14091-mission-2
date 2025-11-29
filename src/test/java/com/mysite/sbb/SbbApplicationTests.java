@@ -16,6 +16,8 @@ class SbbApplicationTests {
     @Autowired
     private QuestionRepository questionRepository;
 
+    @Autowired
+    private AnswerRepository answerRepository;
 //	@Test
 //	void testJpa() {
 //        Question question1 = new Question();
@@ -76,14 +78,26 @@ class SbbApplicationTests {
 //        q.setSubject("수정된 제목1");
 //        this.questionRepository.save(q);
 //    }
+//
+//    @Test
+//    void testJpa8(){
+//        assertEquals(2, this.questionRepository.count());
+//        Optional<Question> oq = this.questionRepository.findById(1);
+//        assertTrue(oq.isPresent());
+//        Question q = oq.get();
+//        this.questionRepository.delete(q);
+//        assertEquals(1, this.questionRepository.count());
+//    }
 
-    @Test
-    void testJpa8(){
-        assertEquals(2, this.questionRepository.count());
-        Optional<Question> oq = this.questionRepository.findById(1);
+    void testJpa9(){
+        Optional<Question> oq = this.questionRepository.findById(2);
         assertTrue(oq.isPresent());
         Question q = oq.get();
-        this.questionRepository.delete(q);
-        assertEquals(1, this.questionRepository.count());
+
+        Answer a = new Answer();
+        a.setContent("네");
+        a.setQuestion(q);
+        a.setCreateDate(LocalDateTime.now());
+        this.answerRepository.save(a);
     }
 }
