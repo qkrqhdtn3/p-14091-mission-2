@@ -1,9 +1,15 @@
 git add .;
-git commit -m "feat: add / endpoint to redirect to /question/list";
+git commit -m "feat: add question_detail template";
 git push origin main
 
 git commit --allow-empty -m "2-09 start"
 
+feat: add getQuestion(id) method to QuestionService
+feat: add question_detail template
+feat: add /question/detail/{id} endpoint in QuestionController
+feat: add links to question details in question_list template
+refactor: use service instead of repistory in QuestionController
+feat: add QuestionService with getList method
 feat: add / endpoint to redirect to /question/list
 fix: correct tag and correct syntax in question_list template
 feat : add question list table to question_list template
