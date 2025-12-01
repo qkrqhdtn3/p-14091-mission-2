@@ -12,9 +12,11 @@ import org.springframework.util.AntPathMatcher;
 public class SecurityConfig {
     @Bean
     SecurityFilterChain filterChain(HttpSecurity httpSecurity) throws Exception{
-        httpSecurity.authorizeHttpRequests((authorizeHttpRequests)
-                -> authorizeHttpRequests
-                .requestMatchers("/**").permitAll());
+        httpSecurity
+                .authorizeHttpRequests((authorizeHttpRequests) -> authorizeHttpRequests
+                        .requestMatchers("/**").permitAll())
+                .csrf((csrf) -> csrf
+                        .ignoringRequestMatchers("/h2-console/**"));
         return httpSecurity.build();
     }
 }
