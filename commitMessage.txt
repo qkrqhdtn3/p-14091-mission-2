@@ -1,9 +1,37 @@
 git add .;
-git commit -m "feat: block answer creation for not logged in users";
+git commit -m "feat: add search functionality in QuestionRepository";
 git push origin main
 
-git commit --allow-empty -m "3-08 start"
+git commit --allow-empty -m "3-13 start"
 
+feat: add search functionality in QuestionRepository
+feat: add search functionality to question with multiple fields
+feat: apply markdown rendering in question_detail template
+feat: add markdown component in CommonUtil
+feat: add commonmark dependency
+feat: modify answer controller to handle anchor-based redirects
+feat: add redirection with anchor functionality in AnswerController
+feat: add anchor link to answer in template
+fix: correct typo in controller method annotation
+feat: add answer recommentdation feature
+feat: add voter field to question and answer entities
+feat: add answer deletion authentication and endpoint to controller
+feat: display question and answer modifyDate in template
+feat: add answer deletion functionality
+feat: add answer modification functionality in controller
+feat: add answer modification template
+feat: add answer modification functionality to controller and service
+feat: add answer modification button to detail template
+feat: add question deletion functionality to controller and service
+feat: add deletion functionality to template
+feat: add question deletion button to question_detail template
+feat: add question modification functionality to controller
+feat: add question modification funtionality to service
+feat: support question creation and modification in question_form template
+feat: add question modification functionality to QuestionController
+feat: add edit button for question
+feat: add modifyDate filed to Question and Answer entity
+feat: display author to question_list template
 feat: block answer creation for not logged in users
 feat: add redirect to login page for pages requiring authentication
 test: add null data for author field
