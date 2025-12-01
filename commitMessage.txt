@@ -1,9 +1,32 @@
 git add .;
-git commit -m "feat: add navbar.html as common template";
+git commit -m "feat: block answer creation for not logged in users";
 git push origin main
 
-git commit --allow-empty -m "3-01 start"
+git commit --allow-empty -m "3-08 start"
 
+feat: block answer creation for not logged in users
+feat: add redirect to login page for pages requiring authentication
+test: add null data for author field
+feat: add Question controller and service with SiteUser
+feat: add Answer entity, controller and service with SiteUser
+feat: add Question and Answer entities with @ManyToOne relationship to SiteUser
+fix: correct logout functionality in SecurityConfig
+feat: add logout functionality in navbar and SecurityConfig
+feat: add login and logout links with authorization to navbar.html
+feat: add login link to navbar.html
+feat: add login authentication functioanlity with spring security
+feat: add login_form.html template
+feat: add /user/login endpoint to UserController
+feat: add login url in spring security
+feat: add exception handling for duplicate user registration
+feat: add signup link to navbar
+feat: add user signup form to signup_form.html
+feat: add user signup functionality with validation to UserController 
+feat: add UserCreateForm with validation
+feat: add UserService to handle user creation with password encoding
+feat: add service for SiteUser entity
+feat: add repository for SiteUser entity
+feat: add SiteUser entity with id, username, password, email
 feat: apply navbar.html as common layout template
 feat: apply bootstrap.min.js in layout template
 feat: add bootstrap.min.js to /resouces/static
