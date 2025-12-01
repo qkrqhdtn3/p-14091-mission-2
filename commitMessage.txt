@@ -1,9 +1,13 @@
 git add .;
-git commit -m "refactor: apply formErrorsFragment in question_form template";
+git commit -m "feat: add navbar.html as common template";
 git push origin main
 
-git commit --allow-empty -m "2-16 start"
+git commit --allow-empty -m "3-01 start"
 
+feat: apply navbar.html as common layout template
+feat: apply bootstrap.min.js in layout template
+feat: add bootstrap.min.js to /resouces/static
+feat: add navigation bar in layout template
 refactor: apply formErrorsFragment in question_form template
 refactor: apply formErrorsFragment in question_detail template
 feat: add formErrorsFragment to display validation error template
