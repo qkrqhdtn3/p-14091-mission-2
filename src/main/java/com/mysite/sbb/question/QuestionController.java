@@ -101,7 +101,7 @@ public class QuestionController {
         return "redirect:/";
     }
 
-    @PreAuthorize("istAuthenticated()")
+    @PreAuthorize("isAuthenticated()")
     @GetMapping("/vote/{id}")
     public String questionVote(Principal principal,
                                @PathVariable("id") Integer id){
