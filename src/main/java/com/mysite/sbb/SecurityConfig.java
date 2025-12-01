@@ -33,7 +33,7 @@ public class SecurityConfig {
                         .loginPage("/user/login")
                         .defaultSuccessUrl("/"))
                 .logout((logout) -> logout
-                        .logoutUrl("/user/logout")
+                        .logoutRequestMatcher(new RegexRequestMatcher("^/user/logout$", null))
                         .logoutSuccessUrl("/")
                         .invalidateHttpSession(true))
         ;
