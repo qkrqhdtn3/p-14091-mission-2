@@ -1,9 +1,32 @@
 git add .;
-git commit -m "fix: change /answer/create/{id} endpoint from GET to POST";
+git commit -m "refactor: apply formErrorsFragment in question_form template";
 git push origin main
 
-git commit --allow-empty -m "2-12 start"
+git commit --allow-empty -m "2-16 start"
 
+refactor: apply formErrorsFragment in question_form template
+refactor: apply formErrorsFragment in question_detail template
+feat: add formErrorsFragment to display validation error template
+fix: correct POST /create redirect path to /question/list
+feat: add AnswerForm parameter to /detail/{id} enpoint
+feat: add validation messages in question_detail template
+feat: add validation for answer creation in AnswerController
+feat: add AnswerForm for validation
+refactor: bind inputs using th:field in question_form template
+feat: add /question/create GET endpoint in QuestionController
+feat: add validation feedback to question_form template
+feat: add validation for question creation using QuestionForm
+feat: add QuestionForm for validation annotations
+feat: add validation dependency
+feat: connect question createion endpoint to service layer
+feat: implement question creation service method
+feat: add root redirect to /question/list
+refactor: update question create mapping to POST
+feat: add question_form template
+feat: add /question/create GET endpoint in QuestionController
+feat: add create question qutton in question_list template
+chore: remove unused style.css content
+feat: apply layout inheritance in question_detail template
 fix: change /answer/create/{id} endpoint from GET to POST
 feat: add AnswerController with /answer/create/{id} endpoint
 feat: add form to post answers in question_detail template
